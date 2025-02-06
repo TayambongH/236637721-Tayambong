@@ -1,38 +1,40 @@
+
 /* General Reset and Box Model */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body and Fonts */
-  body {
+}
+
+/* Body and Fonts */
+body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-image: url('https://via.placeholder.com/1920x800');
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.planview.com%2Ftop-6-software-development-methodologies%2F&psig=AOvVaw17N65JQxI4IX5jImCeMNyE&ust=1738970847471000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiLy9CcsIsDFQAAAAAdAAAAABAE');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
+    padding: 100px 20px;
     text-align: center;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
-  }
-  
-  .cta-button {
+}
+
+.cta-button {
     background-color: #007BFF;
     color: white;
     padding: 15px 30px;
@@ -40,155 +42,58 @@
     border-radius: 5px;
     font-size: 1.2em;
     transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
+    display: inline-block;
+}
+
+.cta-button:hover {
     background-color: #0056b3;
-  }
-  
-  /* Navigation */
-  nav {
+}
+
+/* Navigation */
+nav {
     background-color: #333;
-  }
-  
-  .nav-links {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 15px;
-  }
-  
-  .nav-links li {
-    margin: 0 20px;
-  }
-  
-  .nav-links a {
+    gap: 20px;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #007BFF;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-  }
-  
-  .about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1em;
-  }
-  
-  /* Services Section */
-  .services {
-    padding: 50px 0;
-  }
-  
-  .services h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .service-grid {
+}
+
+/* Services Section */
+.service-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-  }
-  
-  .service-item {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-item {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service-item h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-  }
-  
-  .service-item p {
-    font-size: 1.1em;
-  }
-  
-  /* Contact Section */
-  .contact {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-  }
-  
-  .contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact input,
-  .contact textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact button {
-    padding: 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  /* Mobile-Friendly Design */
-  @media (max-width: 768px) {
-    .service-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .service-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .hero h1 {
-      font-size: 2em;
-    }
-  
-    .hero p {
-      font-size: 1em;
-    }
-  
-    .cta-button {
-      font-size: 1em;
-      padding: 10px 20px;
-    }
-  }
-  
+}
+
