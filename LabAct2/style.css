@@ -16,7 +16,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.planview.com%2Ftop-6-software-development-methodologies%2F&psig=AOvVaw17N65JQxI4IX5jImCeMNyE&ust=1738970847471000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiLy9CcsIsDFQAAAAAdAAAAABAE');
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
